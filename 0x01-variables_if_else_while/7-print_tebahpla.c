@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * min - progrsm to print alphabet letter in reverse
+ * main - program to print alphabet letter in reverse
  *
- * return: return 0
+ * Return: return 0
  */
 int main(void)
 {

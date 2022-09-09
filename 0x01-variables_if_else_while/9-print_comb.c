@@ -3,7 +3,7 @@
 /**
  * main- prints all single digits wit , and space
  *
- * return: return 0
+ * Return: return 0
  */
 int main(void)
 {

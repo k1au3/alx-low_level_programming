@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - program to print letters of the alphabet in all cases 
+ *main- program to print letters of the alphabet in all cases
  *
- * Return: return 0
+ *Return: return 0
  */
 int main(void)
 {
