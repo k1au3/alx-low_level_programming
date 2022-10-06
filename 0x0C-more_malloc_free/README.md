@@ -1,1 +1,1 @@
-Automatic and Dynamic memory allocation, malloc and free
+Automatic and Dynamic memory allocation, malloc,,free
