@@ -1,8 +1,3 @@
-/*
- * File: 8-delete_dnodeint.c
- * 
- */
-
 #include "lists.h"
 
 /**
