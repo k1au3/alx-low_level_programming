@@ -1,20 +1,40 @@
+#include "main.h"
 /**
-* _atoi - changes a string to an int
-* @s: the string to be changed
-*
-* Return: the converted int
-*/
+ * is_numerical - checks if it is adigit
+ * @n: number
+ * Return: if number return 1, else 0
+ */
+int is_numerical(unsigned int n)
+{
+	return (n >= '0' && n <= '9');
+}
+
+/**
+ * _atoi - convert a string to an integer
+ * @s: string
+ * Return: Return the num
+ */
+
 int _atoi(char *s)
 {
-int i = 1;
-unsigned int num = 0;
-do {
-if (*s == '-')
-i *= -1;
-else if (*s >= '0' && *s <= '9')
-num = num * 10 + (*s - '0');
-else if (num > 0)
-break;
-} while (*s++);
-return (num *i);
+	unsigned int number, a;
+	int sign;
+
+	sign = 1;
+	number = 0;
+
+	for (a = 0; s[a] != '\0'; a++)
+	{
+		if (is_numerical(s[a]))
+		{
+			number = (s[a] - 48) + number * 10;
+			if (s[a + 1] == ' ')
+				break;
+		}
+		else if (s[a] == '-')
+		{
+			sign *= -1;
+		}
+	}
+	return (number * sign);
 }
